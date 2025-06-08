@@ -180,8 +180,8 @@ form.login-form .register {
 }
 
 #logout-btn {
-    background: #ef4444 !important; /* light red */
-    color: #f3f4f6 !important;      /* light gray */
+    background: #f3f4f6 !important; /* light gray */
+    color: #ef4444 !important;      /* light red */
     box-shadow: 0 0 8px #ef4444, 0 0 4px #f3f4f6;
     border: none;
     font-weight: bold;
@@ -189,8 +189,7 @@ form.login-form .register {
 }
 
 #logout-btn:hover {
-    background: #b91c1c !important; /* darker red */
-    color: #f3f4f6 !important;      /* light gray */
+    background: #e5e7eb !important;
+    color: #b91c1c !important;
     box-shadow: 0 0 16px #ef4444, 0 0 8px #f3f4f6;
-}
 }
