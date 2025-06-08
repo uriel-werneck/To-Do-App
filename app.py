@@ -39,7 +39,8 @@ def home():
     if not session.get('logged_in'):
         return redirect(url_for('login'))
     tasks = Task.query.all()
-    return render_template('index.html', tasks=tasks)
+    username = session.get('username')
+    return render_template('index.html', tasks=tasks, username=username)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
