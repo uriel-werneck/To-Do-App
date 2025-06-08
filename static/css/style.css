@@ -1,0 +1,176 @@
+/* Global Styles (kept the same) */
+body {
+    background: linear-gradient(135deg, #0a0020 0%, #000010 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    background: rgba(20, 0, 40, 0.95);
+    border: 2px solid #7c3aed;
+    border-radius: 18px;
+    box-shadow: 0 0 32px #3b82f6, 0 0 8px #a21caf;
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 350px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+h1, h2 {
+    color: #7c3aed;
+    text-shadow: 0 0 8px #3b82f6, 0 0 2px #a21caf;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #3b82f6;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-shadow: 0 0 4px #a21caf;
+    /* default for register.html or pages that don’t override */
+    align-self: flex-start;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    border: 1.5px solid #a21caf;
+    border-radius: 8px;
+    background: #0a0020;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 0 8px #3b82f6 inset;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border: 1.5px solid #3b82f6;
+    box-shadow: 0 0 12px #7c3aed, 0 0 8px #3b82f6 inset;
+}
+
+button,
+input[type="submit"] {
+    display: block;
+    margin: 1.2rem auto 0 auto;
+    padding: 0.8rem 2.2rem;
+    background: linear-gradient(90deg, #7c3aed 0%, #3b82f6 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 0 12px #a21caf, 0 0 8px #3b82f6;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    text-align: center;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #3b82f6 0%, #7c3aed 100%);
+    box-shadow: 0 0 24px #7c3aed, 0 0 16px #3b82f6;
+    transform: scale(1.04);
+}
+
+::placeholder {
+    color: #a78bfa;
+    opacity: 1;
+    text-shadow: 0 0 4px #3b82f6;
+}
+
+/* Login Page Specific Modifications */
+form.login-form label {
+    /* ensuring labels remain left-aligned */
+    align-self: flex-start;
+}
+
+/* If you have a "register" text (for example, a link) within your login page, you can wrap it in an element with a .register class */
+form.login-form .register {
+    text-align: center;
+    width: 100%;
+}
+/* Index Page Specific Modifications */
+.index-container {
+    background: rgba(20, 0, 40, 0.97);
+    border: 2px solid #3b82f6;
+    border-radius: 18px;
+    box-shadow: 0 0 32px #7c3aed, 0 0 8px #a21caf;
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.index-title {
+    color: #3b82f6;
+    text-shadow: 0 0 8px #7c3aed, 0 0 2px #a21caf;
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.index-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.2rem 0;
+}
+
+.index-list li {
+    background: rgba(60, 10, 90, 0.85);
+    border: 1.5px solid #a21caf;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 0.7rem;
+    padding: 0.8rem 1rem;
+    box-shadow: 0 0 8px #3b82f6 inset;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.index-list li:hover {
+    background: rgba(60, 10, 90, 1);
+    box-shadow: 0 0 16px #7c3aed, 0 0 8px #3b82f6 inset;
+}
+
+.index-add-btn {
+    margin: 1.2rem auto 0 auto;
+    padding: 0.8rem 2.2rem;
+    background: linear-gradient(90deg, #3b82f6 0%, #7c3aed 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 0 12px #a21caf, 0 0 8px #3b82f6;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    text-align: center;
+}
+
+.index-add-btn:hover {
+    background: linear-gradient(90deg, #7c3aed 0%, #3b82f6 100%);
+    box-shadow: 0 0 24px #7c3aed, 0 0 16px #3b82f6;
+    transform: scale(1.04);
+}
